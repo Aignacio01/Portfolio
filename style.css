@@ -1,0 +1,171 @@
+/* MAQUETACIÓN */
+
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: white;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #011712;
+        /* background: linear-gradient( black , white )bottom  */
+}
+
+/* GLOBALES */
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4 {
+    font-family: var(--fuenteHeading);
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+/* utilidades */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+
+/* HEADER */
+.header {
+    height: 20rem;
+}
+.header_texto {
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.barra {
+    text-align: center;
+}
+
+.barra_logo {
+    color: red;
+    background-color: black;
+}
+
+@media ( min-width: 768px ) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section_proyect-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+}
+
+
+}
+.section_parr {
+    padding: 2rem;
+}
+.section_info {
+    border: 0.1rem solid #fff;
+    margin: 2rem;
+    background-color: #011712;
+    border-radius: 2rem;
+    transition: 1s;
+}
+.section_info:hover {
+    transform: scale(1.1);
+    background-color: #02372a92;
+    border: none;
+
+}
+
+.navegacion_enlace {
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 4rem;
+}
+.navegacion_enlace:hover {
+    background-color: #073026e9;
+    border-radius: 4rem;
+    transition: 1s;
+}
+
+.hero {
+    text-align: center;
+}
+
+.contenido_principal {
+    margin-top: 3rem;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.section_grid {
+    display: grid;
+}
+
+.section_proyect {
+    margin: 1rem;
+    background-color: #02261d92;
+    border-radius: 2rem;
+    transition: 1s;
+
+}
+.section_proyect:hover {
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+.proyect_box {
+}
+.proyect_img {
+    height: 80%;
+    width: 80%;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.proyect_img:hover {
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+/* FOOTER */
+.footer {
+    height: 30rem;
+}
